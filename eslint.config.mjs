@@ -10,7 +10,10 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  // Base recommended ESLint rules for general code quality
+  compat.extends("eslint:recommended")[0], // Access the first (and usually only) element
+  // Next.js specific rules for core web vitals and TypeScript
+  ...compat.extends("next/core-web-vitals", "next/typescript")
 ];
 
 export default eslintConfig;
