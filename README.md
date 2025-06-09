@@ -15,7 +15,7 @@ Welcome to **Mario's Network Conversion Toolkit**! This is a comprehensive onlin
 ## 🚀 Live Demo
 
 Check out the live application here:
-**[https://yourdomain.com](https://yourdomain.com)** *(Remember to replace `https://yourdomain.com` with your actual deployed URL!)*
+**[https://calculators.mariospavlou.net](https://calculators.mariospavlou.net)**
 
 ## 🛠️ Technologies Used
 
@@ -31,12 +31,12 @@ Follow these steps to get a local copy up and running:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/marios-network-toolkit.git](https://github.com/your-username/marios-network-toolkit.git)
+    git clone [https://github.com/mariostpavlou/network-conversion-tools/](https://github.com/mariostpavlou/network-conversion-tools/)
     ```
 
 2.  **Navigate to the project directory:**
     ```bash
-    cd marios-network-toolkit
+    cd network-conversion-tools
     ```
 
 3.  **Install dependencies:**
