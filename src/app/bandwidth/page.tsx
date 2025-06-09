@@ -1,7 +1,7 @@
 // src/app/bandwidth/page.tsx (Updated)
 'use client';
 import React, { useState, useMemo, useEffect } from 'react';
-import { FaDownload, FaUpload, FaClock, FaGauge, FaCalculator } from 'react-icons/fa6';
+import { FaDownload, FaClock, FaGauge, FaCalculator } from 'react-icons/fa6';
 import {
   convertToBits,
   convertToSeconds,

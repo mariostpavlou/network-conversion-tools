@@ -1,7 +1,7 @@
 // src/app/binary/page.tsx (Updated)
 'use client';
 import React, { useState, useEffect, useMemo } from 'react';
-import { FaCode, FaPlus, FaMinus, FaDivide, FaEquals, FaLightbulb, FaCodeBranch } from 'react-icons/fa6'; // Changed FaBinary to FaCode
+import { FaCode } from 'react-icons/fa6'; // Changed FaBinary to FaCode
 import {
   getRadix, // Import getRadix
   Base, Operation // Import types

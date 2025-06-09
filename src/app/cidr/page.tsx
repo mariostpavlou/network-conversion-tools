@@ -5,7 +5,6 @@ import { useState } from 'react';
 // Import all necessary functions from your utility file
 import {
   calculateIpRange,
-  cidrToMask,
   maskToCidr,
   isIpValid,
   isValidCidr,

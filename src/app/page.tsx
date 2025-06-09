@@ -1,6 +1,6 @@
 // src/app/page.tsx
 import Link from 'next/link';
-import { FaNetworkWired, FaCalculator, FaCode, FaGlobe } from 'react-icons/fa6';
+import { FaNetworkWired, FaCalculator, FaCode } from 'react-icons/fa6';
 
 export default function HomePage() {
   return (
