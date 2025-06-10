@@ -91,7 +91,7 @@ export default function BandwidthCalculatorPage() {
     <div className="flex flex-col items-center animate-fade-in p-4 sm:p-8 space-y-8">
       <h1 className="text-4xl font-bold text-white-800 mb-8">Bandwidth Calculator</h1>
 
-      <section className="w-full max-w-xl bg-card-bg dark:bg-white-700 p-6 rounded-lg shadow-md border border-card-border dark:border-white-600">
+      <section className="w-full max-w-xl p-6 rounded-lg shadow-xl bg-dark-bg-secondary">
         <h2 className="text-2xl font-semibold text-white-700 mb-4 flex items-center gap-2">
           <FaCalculator className="text-secondary-accent" /> Calculate Bandwidth, Time, or Size
         </h2>
@@ -107,13 +107,13 @@ export default function BandwidthCalculatorPage() {
               id="fileSize"
               value={fileSize}
               onChange={(e) => setFileSize(parseFloat(e.target.value) || '')}
-              className="shadow appearance-none border rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
+              className="shadow appearance-none rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
               placeholder="e.g., 100"
             />
             <select
               value={fileSizeUnit}
               onChange={(e) => setFileSizeUnit(e.target.value as DataUnit)}
-              className="shadow border rounded-r py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
+              className="shadow rounded-r bg-dark-bg-secondary text-purple-100 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
             >
               <option>KB</option>
               <option>MB</option>
@@ -133,13 +133,13 @@ export default function BandwidthCalculatorPage() {
               id="transferTime"
               value={transferTime}
               onChange={(e) => setTransferTime(parseFloat(e.target.value) || '')}
-              className="shadow appearance-none border rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
+              className="shadow appearance-none rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
               placeholder="e.g., 60"
             />
             <select
               value={transferTimeUnit}
               onChange={(e) => setTransferTimeUnit(e.target.value as TimeUnit)}
-              className="shadow border rounded-r py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
+              className="shadow rounded-r bg-dark-bg-secondary text-purple-100 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
             >
               <option>seconds</option>
               <option>minutes</option>
@@ -158,13 +158,13 @@ export default function BandwidthCalculatorPage() {
               id="bandwidth"
               value={bandwidth}
               onChange={(e) => setBandwidth(parseFloat(e.target.value) || '')}
-              className="shadow appearance-none border rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
+              className="shadow appearance-none rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
               placeholder="e.g., 10"
             />
             <select
               value={bandwidthUnit}
               onChange={(e) => setBandwidthUnit(e.target.value as BandwidthUnit)}
-              className="shadow border rounded-r py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
+              className="shadow rounded-r bg-dark-bg-secondary text-purple-100 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
             >
               <option>bps</option>
               <option>Kbps</option>

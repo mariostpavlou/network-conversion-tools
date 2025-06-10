@@ -110,9 +110,9 @@ export default function CidrCalculatorPage() {
       </h1>
 
       {/* Calculate CIDR from Usable Hosts Section */}
-      <div className="bg-dark-bg-secondary p-6 rounded-lg shadow-xl animate-fade-in delay-200 border border-dark-border-subtle">
-        <h2 className="text-2xl font-bold text-white mb-4">Calculate CIDR from Usable Hosts</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="bg-dark-bg-secondary p-6 rounded-lg shadow-xl animate-fade-in delay-200 border-dark-border-subtle ">
+        <h2 className="text-2xl font-bold text-white mb-4 ">Calculate CIDR from Usable Hosts</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
           <div>
             <label htmlFor="usableHosts" className="block text-dark-text-muted text-sm font-bold mb-2">
               Desired Usable Hosts:
@@ -140,7 +140,7 @@ export default function CidrCalculatorPage() {
           <div className="mt-4 text-status-error text-sm">{usableHostsError}</div>
         )}
         {calculatedCidrFromUsable && (
-          <div className="mt-6 p-4 bg-dark-bg-secondary rounded-md border border-dark-border-subtle text-dark-text-light">
+          <div className="mt-6 p-4 bg-dark-bg-secondary rounded-md border-dark-border-subtle text-dark-text-light">
             <h3 className="font-semibold mb-2">Calculated CIDR:</h3>
             <p className="font-mono text-lg">
               Subnet Mask: {calculatedCidrFromUsable.mask} {calculatedCidrFromUsable.message}
@@ -163,7 +163,7 @@ export default function CidrCalculatorPage() {
       </div>
 
       {/* Existing CIDR to IP Range Section */}
-      <div className="bg-dark-bg-secondary p-6 rounded-lg shadow-xl animate-fade-in delay-300 border border-dark-border-subtle">
+      <div className="bg-dark-bg-secondary p-6 rounded-lg shadow-xl animate-fade-in delay-300 border-dark-border-subtle">
         <h2 className="text-2xl font-bold text-white mb-4">CIDR to IP Range</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -189,14 +189,14 @@ export default function CidrCalculatorPage() {
           </div>
         </div>
         {ipRangeResult && (
-          <pre className="mt-6 p-4 bg-dark-bg-secondary rounded-md border border-dark-border-subtle text-dark-text-light text-sm overflow-x-auto whitespace-pre-wrap">
+          <pre className="mt-6 p-4 bg-dark-bg-secondary rounded-md border-dark-border-subtle text-dark-text-light text-sm overflow-x-auto whitespace-pre-wrap">
             {ipRangeResult}
           </pre>
         )}
       </div>
 
       {/* Existing IP Address & Subnet Mask to CIDR Section */}
-      <div className="bg-dark-bg-secondary p-6 rounded-lg shadow-xl animate-fade-in delay-400 border border-dark-border-subtle">
+      <div className="bg-dark-bg-secondary p-6 rounded-lg shadow-xl animate-fade-in delay-400 border-dark-border-subtle">
         <h2 className="text-2xl font-bold text-white mb-4">IP Address & Subnet Mask to CIDR</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -233,7 +233,7 @@ export default function CidrCalculatorPage() {
           Calculate CIDR
         </button>
         {ipRangeCidrResult && (
-          <div className="mt-6 p-4 bg-dark-bg-secondary rounded-md border border-dark-border-subtle text-dark-text-light">
+          <div className="mt-6 p-4 bg-dark-bg-secondary rounded-md border-dark-border-subtle text-dark-text-light">
             <h3 className="font-semibold mb-2">Calculated CIDR:</h3>
             <p className="font-mono text-lg">{ipRangeCidrResult}</p>
           </div>

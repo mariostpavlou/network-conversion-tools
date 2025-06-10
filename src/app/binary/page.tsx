@@ -99,7 +99,7 @@ export default function BinaryCalculatorPage() {
     <div className="flex flex-col items-center animate-fade-in p-4 sm:p-8 space-y-8">
       <h1 className="text-4xl font-bold text-white-800  mb-8 animate-fade-in">Binary & Base Converter</h1>
 
-      <section className="w-full max-w-xl bg-card-bg dark:bg-white-700 p-6 rounded-lg shadow-md border border-card-border dark:border-white-600 animate-fade-in">
+      <section className="w-full max-w-xl bg-card-bg dark:bg-white-700 p-6 rounded-lg shadow-md bg-dark-bg-secondary border-card-bg-dark-bg-secondary dark:border-white-600 animate-fade-in">
         <h2 className="text-2xl font-semibold text-white-700  mb-4 flex items-center gap-2">
           <FaCode className="text-secondary-accent" /> Perform Operations & Convert Bases
         </h2>
@@ -115,13 +115,13 @@ export default function BinaryCalculatorPage() {
               id="input1"
               value={input1}
               onChange={(e) => setInput1(e.target.value)}
-              className="shadow appearance-none border rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
+              className="shadow appearance-none bg-dark-bg-secondary rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
               placeholder="Enter number"
             />
             <select
               value={base1}
               onChange={(e) => setBase1(e.target.value as Base)}
-              className="shadow border rounded-r py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-blue-800  dark:border-red-600"
+              className="text-purple-100 bg-dark-bg-secondary rounded-r py-2 px-3 leading-tight"
             >
               <option value="decimal">Decimal</option>
               <option value="binary">Binary</option>
@@ -132,7 +132,7 @@ export default function BinaryCalculatorPage() {
         </div>
 
         {/* Operation Selector */}
-        <div className="mb-4">
+        <div className="mb-4 ">
           <label htmlFor="operation" className="block text-white-700  text-sm font-bold mb-2">
             Operation:
           </label>
@@ -140,7 +140,7 @@ export default function BinaryCalculatorPage() {
             id="operation"
             value={operation}
             onChange={(e) => setOperation(e.target.value as Operation)}
-            className="shadow border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
+            className="shadow bg-dark-bg-secondary rounded w-full py-2 px-3 text-purple-100 leading-tight focus:outline-none focus:shadow-outline dark:bg-white-800  dark:border-white-600"
           >
             <option value="">(Conversion only)</option>
             <option value="+">Add (+)</option>
@@ -167,14 +167,14 @@ export default function BinaryCalculatorPage() {
               value={input2}
               onChange={(e) => setInput2(e.target.value)}
               disabled={!operation}
-              className="shadow appearance-none border rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline disabled:bg-white-200 disabled:dark:bg-white-900 disabled:opacity-70 dark:bg-white-800  dark:border-white-600"
+              className="shadow appearance-none bg-dark-bg-secondary rounded-l w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline disabled:bg-white-200 disabled:dark:bg-white-900 disabled:opacity-70 dark:bg-white-800  dark:border-white-600"
               placeholder="Enter number"
             />
             <select
               value={base2}
               onChange={(e) => setBase2(e.target.value as Base)}
               disabled={!operation}
-              className="shadow border rounded-r py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline disabled:bg-white-200 disabled:dark:bg-white-900 disabled:opacity-70 dark:bg-white-800  dark:border-white-600"
+              className="text-purple-100 bg-dark-bg-secondary rounded-r py-2 px-3 leading-tight"
             >
               <option value="decimal">Decimal</option>
               <option value="binary">Binary</option>

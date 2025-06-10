@@ -13,23 +13,23 @@ export default function HomePage() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl ">
-        <Link href="/cidr" className="bg-dark-bg-secondary p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center group animate-fade-in delay-300 border border-aqua-border-subtle relative overflow-hidden">
-          <div className="absolute inset-0 bg-aqua-glass-overlay rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 btn-highlight:hover"></div>
-          <FaNetworkWired className="text-aqua-accent-blue text-5xl mb-4 group-hover:scale-110 transition-transform duration-300" />
+        <Link href="/cidr" className="bg-dark-bg-secondary p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-100 flex flex-col items-center group animate-fade-in delay-100 border-aqua-border-subtle relative overflow-hidden">
+          <div className="absolute inset-0 bg-aqua-glass-overlay rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-100 btn-highlight:hover"></div>
+          <FaNetworkWired className="text-aqua-accent-blue text-5xl mb-4 group-hover:scale-110 transition-transform duration-100" />
           <h2 className="text-2xl font-semibold text-aqua-text-light mb-2">CIDR Calculator</h2>
           <p className="text-aqua-text-muted">Master IP subnetting and address ranges.</p>
         </Link>
 
-        <Link href="/bandwidth" className="bg-dark-bg-secondary p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center group animate-fade-in delay-400 border border-aqua-border-subtle relative overflow-hidden">
-          <div className="absolute inset-0 bg-aqua-glass-overlay rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <FaCalculator className="text-aqua-accent-green text-5xl mb-4 group-hover:scale-110 transition-transform duration-300" />
+        <Link href="/bandwidth" className="bg-dark-bg-secondary p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-100 flex flex-col items-center group animate-fade-in delay-400 border-aqua-border-subtle relative overflow-hidden">
+          <div className="absolute inset-0 bg-aqua-glass-overlay rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-100"></div>
+          <FaCalculator className="text-aqua-accent-green text-5xl mb-4 group-hover:scale-110 transition-transform duration-100" />
           <h2 className="text-2xl font-semibold text-aqua-text-light mb-2">Bandwidth Calculator</h2>
           <p className="text-aqua-text-muted">Estimate transfer times and required bandwidth.</p>
         </Link>
 
-        <Link href="/binary" className="bg-dark-bg-secondary p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center group animate-fade-in delay-500 border border-aqua-border-subtle relative overflow-hidden">
-          <div className="absolute inset-0 bg-aqua-glass-overlay rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <FaCode className="text-aqua-accent-purple text-5xl mb-4 group-hover:scale-110 transition-transform duration-300" />
+        <Link href="/binary" className="bg-dark-bg-secondary p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-100 flex flex-col items-center group animate-fade-in delay-500 border-aqua-border-subtle relative overflow-hidden">
+          <div className="absolute inset-0 bg-aqua-glass-overlay rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-100"></div>
+          <FaCode className="text-aqua-accent-purple text-5xl mb-4 group-hover:scale-110 transition-transform duration-100" />
           <h2 className="text-2xl font-semibold text-aqua-text-light mb-2">Binary Converter</h2>
           <p className="text-aqua-text-muted">Convert between bases and perform bitwise operations.</p>
         </Link>
